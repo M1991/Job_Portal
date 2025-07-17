@@ -1,0 +1,35 @@
+{
+  "name": "packages",
+  "version": "1.0.0",
+  "description": "Job Portal for applying job for various positions",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --watch server.js"
+  },
+  "author": "Manoj",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.1.0",
+    "express": "^5.1.0",
+    "express-async-errors": "^2.1.0",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^8.0.1",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.30.1",
+    "mongoose": "^8.16.2",
+    "morgan": "^1.10.0",
+    "swagger-doc": "^0.3.0",
+    "swagger-docs": "^0.0.0-alpha2",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "validator": "^13.15.15",
+    "xss-clean": "^0.1.4",
+    "xss-clean-types": "^1.0.2",
+    "zod": "^3.25.75"
+  }
+}
