@@ -12,6 +12,7 @@ import morgan from "morgan";
 // security
 import helmet from "helmet";
 import xss from "xss-clean";
+//const { xss } = require("xss-clean");
 import mongoSanitize from "express-mongo-sanitize";
 // file imports
 import connectDB from "./config/db.js";
@@ -57,6 +58,7 @@ app.use(helmet());
 app.use(xss());
 app.use(mongoSanitize());
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 app.use(morgan('dev'));
 
